@@ -4,19 +4,26 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 ## 1. What was broken when you started?
 
-- What did the game look like the first time you ran it?
-- List at least two concrete bugs you noticed at the start  
-  (for example: "the hints were backwards").
+1. The game looked clean when I first ran it simple format and ready to go
+2. - The Hint was off as it would tell me to go higher when the answer was lower than my guess and go lower
+     when the answer was higher than my guess
+
+   - After clicking the new game button the game crashes. I enter a new guess and press submit but nothing happens
+     my attempts number doesn't go down and a new hint doesn't appear. Nothing even happens when I enter the right number I simply have to restart
+
+   - Additonally the score system is off when I finished guessing a correct answer my score didnt increase and it in fact remained negative
+
+
 
 **Bug Reproduction Log**
 
 Document at least 3 bugs you found. Add rows as needed.
 
-| Input | Expected Behavior | Actual Behavior | Console Output / Error |
-|-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| Input              | Expected Behavior          | Actual Behavior                | Console Output / Error |
+|--------------------|----------------------------|--------------------------------|------------------------|
+| guess 60           |     ("Too High" hint)      |      ("Too Low" hint)          |        "None"
+|click restart button|      Game Restarts         |        Game Crashed            |        "None"
+| guess right answer.|      Score increases       |.      Score stays negative.    |        "None"    
 
 ---
 
