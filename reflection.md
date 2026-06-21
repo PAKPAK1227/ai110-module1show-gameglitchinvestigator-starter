@@ -29,30 +29,27 @@ Document at least 3 bugs you found. Add rows as needed.
 
 ## 2. How did you use AI as a teammate?
 
-- Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
-- Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
-- Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+- Claude chatbot & Claude Code
+- "AI suggested I swap the string suggestions in the HIGH/LOW conditional check to fix the bug and it turned out to be the right approachl I verified the result by writitng a test case and also running the program myself to see if the logic made sense
+- "AI suggested I created two seperate test files and I actually did at first but then that caused a lot of confusion, hence, I went back to the original version and appended all logic in the original test file"
 
 ---
 
 ## 3. Debugging and testing your fixes
 
-- How did you decide whether a bug was really fixed?
-- Describe at least one test you ran (manual or using pytest)  
-  and what it showed you about your code.
-- Did AI help you design or understand any tests? How?
+- I generated a test case to see if it passed and also ran the program myself in streamlit to see if the logic made sense myself and was actually working at runtime
+- One manual test I ran is the correct Hint test. I guessed lower than the actual score and it told me to go higher and vice versa
+- Yes AI helped me design and generate some test cases to run in test_game_logic.py using specific logic it gave me and used to fix it
 
 ---
 
 ## 4. What did you learn about Streamlit and state?
 
-- How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
-
+- I learned that streamlit reruns the entire script top-to-bottom on every interaction: Every time you click a button, type in a box etc. st.session_state is the only thing that survives a rerun: its a dictionary that streamlit keeps alive across reruns.
 ---
 
 ## 5. Looking ahead: your developer habits
 
-- What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
-- What is one thing you would do differently next time you work with AI on a coding task?
-- In one or two sentences, describe how this project changed the way you think about AI generated code.
+- I want to implement refactoring and generating test cases into my habits when building personal projects.
+- I would read the code myself fully initially to try and make sense of it myself fully before moving to the chatbot.
+- This project made me realize that humans are very much in the loop eventhough AI has automated a lot of the process that was previously done by humans
